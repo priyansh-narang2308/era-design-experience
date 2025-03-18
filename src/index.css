@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,22 +36,6 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -79,14 +66,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -97,5 +76,70 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  .blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* Web 1.0 Styles */
+  .web1-bg {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 5v1H5V0zm1 5v1H5L0 1v1L5 6z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .web1-link {
+    @apply text-[#0000EE] underline cursor-pointer font-web1;
+  }
+
+  .web1-link:visited {
+    @apply text-[#551A8B];
+  }
+
+  .web1-table {
+    @apply border-2 border-web1-gray p-1;
+  }
+
+  .web1-table td {
+    @apply border border-web1-gray p-1;
+  }
+
+  .web1-button {
+    @apply bg-web1-gray px-2 py-1 border-2 border-t-white border-l-white border-b-black border-r-black cursor-pointer font-web1 text-black;
+  }
+
+  /* Web 2.0 Styles */
+  .web2-button {
+    @apply bg-gradient-web2 text-white py-2 px-4 rounded-full shadow-web2 font-web2 font-bold transition-transform hover:scale-105;
+  }
+
+  .web2-card {
+    @apply bg-white rounded-lg shadow-web2 p-4 transition-all hover:shadow-lg;
+  }
+
+  .web2-input {
+    @apply border border-web2-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-web2-blue;
+  }
+
+  /* Web 3.0 Styles */
+  .web3-glass {
+    @apply bg-glass-web3 backdrop-blur-lg border border-white/20 rounded-xl shadow-glass;
+  }
+
+  .web3-button {
+    @apply bg-gradient-web3 text-white py-2 px-6 rounded-xl shadow-web3 font-web3 font-medium transition-all hover:shadow-web3-hover hover:scale-105;
+  }
+
+  .web3-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl shadow-web3 p-6 transition-all hover:shadow-web3-hover;
+  }
+
+  .web3-input {
+    @apply bg-black/10 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-web3-accent;
   }
 }
