@@ -66,35 +66,12 @@ const Web1Content = () => {
             </ul>
             <hr style={{ height: '1px', border: 'none', backgroundColor: 'black' }} />
             <div style={{ textAlign: 'center' }}>
-              <img 
-                src={netscape} 
-                alt="Netscape Now!" 
-                width={88} 
-                height={31} 
-                style={{ border: '0' }} 
-                className="my-2"
-              />
-              <br />
-              <img 
-                src={counter} 
-                alt="Page Counter" 
-                width={88} 
-                height={31} 
-                style={{ border: '0' }} 
-                className="my-2"
-              />
+              
             </div>
           </td>
           <td width="80%" valign="top" className="p-4">
             <div style={{ textAlign: 'center' }}>
-              <img 
-                src={underConstruction} 
-                alt="Under Construction" 
-                width={400} 
-                height={60} 
-                style={{ border: '0' }} 
-                className="my-4"
-              />
+             
             </div>
             <h1 style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: '32px', color: '#800080' }}>
               Welcome to My Web 1.0 Homepage!
