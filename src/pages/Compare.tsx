@@ -63,28 +63,6 @@ const Compare = () => {
                 </ul>
               </div>
 
-              <div>
-                <h3 className="text-xl font-bold mb-3">User Interaction</h3>
-                <ul className="space-y-2 list-disc pl-5">
-                  <li>Read-only content</li>
-                  <li>Form-based inputs</li>
-                  <li>Simple submit buttons</li>
-                  <li>Guestbooks for comments</li>
-                  <li>Minimal JavaScript</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-3">Examples</h3>
-                <ul className="space-y-2 list-disc pl-5">
-                  <li>Early Yahoo!</li>
-                  <li>GeoCities</li>
-                  <li>Angelfire</li>
-                  <li>Early news websites</li>
-                  <li>Personal homepages</li>
-                </ul>
-              </div>
-
               <button 
                 onClick={() => handleEraSelect('web1')} 
                 className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors py-2 px-4 rounded-lg w-full mt-4"
@@ -120,28 +98,6 @@ const Compare = () => {
                   <li>Glossy buttons</li>
                   <li>Web-safe fonts</li>
                   <li>Social sharing buttons</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-3">User Interaction</h3>
-                <ul className="space-y-2 list-disc pl-5">
-                  <li>User-generated content</li>
-                  <li>Comments and reviews</li>
-                  <li>Social sharing</li>
-                  <li>Real-time updates</li>
-                  <li>Drag-and-drop interfaces</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-3">Examples</h3>
-                <ul className="space-y-2 list-disc pl-5">
-                  <li>Facebook</li>
-                  <li>YouTube</li>
-                  <li>Twitter</li>
-                  <li>WordPress blogs</li>
-                  <li>Google Maps</li>
                 </ul>
               </div>
 
@@ -183,28 +139,6 @@ const Compare = () => {
                 </ul>
               </div>
 
-              <div>
-                <h3 className="text-xl font-bold mb-3">User Interaction</h3>
-                <ul className="space-y-2 list-disc pl-5">
-                  <li>Wallet connections</li>
-                  <li>AI-assisted content creation</li>
-                  <li>Voice and natural language UI</li>
-                  <li>Biometric authentication</li>
-                  <li>AR/VR integrations</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-3">Examples</h3>
-                <ul className="space-y-2 list-disc pl-5">
-                  <li>OpenSea (NFT marketplace)</li>
-                  <li>Decentraland (metaverse)</li>
-                  <li>Uniswap (DeFi platform)</li>
-                  <li>DALL-E and Midjourney</li>
-                  <li>AI-powered applications</li>
-                </ul>
-              </div>
-
               <button 
                 onClick={() => handleEraSelect('web3')} 
                 className="border-2 border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white transition-colors py-2 px-4 rounded-lg w-full mt-4"
@@ -216,7 +150,7 @@ const Compare = () => {
         </div>
 
         {/* Future Section */}
-        <div className="web3-glass mx-auto max-w-4xl p-8 text-center">
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl mx-auto max-w-4xl p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">What's Next? Web 4.0 and Beyond</h2>
           <p className="text-xl text-blue-100 mb-8">
             The future of web design will likely incorporate these emerging technologies:

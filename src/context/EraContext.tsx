@@ -1,7 +1,7 @@
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
-export type Era = 'landing' | 'web1' | 'web2' | 'web3';
+type Era = 'web1' | 'web2' | 'web3' | 'landing';
 
 interface EraContextType {
   currentEra: Era;
@@ -10,7 +10,7 @@ interface EraContextType {
 
 const EraContext = createContext<EraContextType | undefined>(undefined);
 
-export const EraProvider = ({ children }: { children: ReactNode }) => {
+export const EraProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentEra, setCurrentEra] = useState<Era>('landing');
 
   return (
@@ -20,10 +20,12 @@ export const EraProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useEra = () => {
+export const useEra = (): EraContextType => {
   const context = useContext(EraContext);
   if (context === undefined) {
     throw new Error('useEra must be used within an EraProvider');
   }
   return context;
 };
+
+export type { Era };

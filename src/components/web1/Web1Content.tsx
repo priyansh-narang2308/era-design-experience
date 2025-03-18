@@ -1,49 +1,67 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import gif89a from '../../assets/web1/under-construction.gif';
+import underConstruction from '../../assets/web1/under-construction.gif';
 import netscape from '../../assets/web1/netscape.gif';
 import counter from '../../assets/web1/counter.gif';
-
-// Define custom styles for the HTML-like elements that aren't supported in React
-const fontStyle = (face: string, size: string, color?: string) => ({
-  fontFamily: face,
-  fontSize: size === '1' ? '10px' : 
-            size === '2' ? '13px' : 
-            size === '3' ? '16px' : 
-            size === '4' ? '18px' : 
-            size === '5' ? '24px' : 
-            size === '6' ? '32px' : '16px',
-  color: color || 'inherit'
-});
 
 const Web1Content = () => {
   const navigate = useNavigate();
   
   return (
-    <table width="100%" cellPadding={0} cellSpacing={0} style={{ border: '0' }}>
+    <table width="100%" cellPadding="0" cellSpacing="0" style={{ border: '0' }}>
       <tbody>
         <tr>
           <td width="20%" valign="top" style={{ backgroundColor: '#EEEEEE' }} className="web1-table">
-            <div style={fontStyle('Times New Roman', '4')}>
-              <b>Site Navigation</b>
+            <div style={{ fontFamily: 'Times New Roman', fontSize: '18px', fontWeight: 'bold' }}>
+              Site Navigation
             </div>
             <hr style={{ height: '1px', border: 'none', backgroundColor: 'black' }} />
             <ul>
               <li>
-                <span className="web1-link" onClick={() => navigate('/explore')}>Home Page</span>
+                <span 
+                  className="web1-link" 
+                  onClick={() => navigate('/explore')}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Home Page
+                </span>
               </li>
               <li>
-                <span className="web1-link" onClick={() => navigate('/about')}>About Me</span>
+                <span 
+                  className="web1-link" 
+                  onClick={() => navigate('/about')}
+                  style={{ cursor: 'pointer' }}
+                >
+                  About Me
+                </span>
               </li>
               <li>
-                <span className="web1-link" onClick={() => navigate('/blog')}>My Blog</span>
+                <span 
+                  className="web1-link" 
+                  onClick={() => navigate('/blog')}
+                  style={{ cursor: 'pointer' }}
+                >
+                  My Blog
+                </span>
               </li>
               <li>
-                <span className="web1-link" onClick={() => navigate('/links')}>Cool Links</span>
+                <span 
+                  className="web1-link" 
+                  onClick={() => navigate('/links')}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Cool Links
+                </span>
               </li>
               <li>
-                <span className="web1-link" onClick={() => navigate('/guestbook')}>Sign Guestbook</span>
+                <span 
+                  className="web1-link" 
+                  onClick={() => navigate('/guestbook')}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Sign Guestbook
+                </span>
               </li>
             </ul>
             <hr style={{ height: '1px', border: 'none', backgroundColor: 'black' }} />
@@ -70,7 +88,7 @@ const Web1Content = () => {
           <td width="80%" valign="top" className="p-4">
             <div style={{ textAlign: 'center' }}>
               <img 
-                src={gif89a} 
+                src={underConstruction} 
                 alt="Under Construction" 
                 width={400} 
                 height={60} 
@@ -78,74 +96,68 @@ const Web1Content = () => {
                 className="my-4"
               />
             </div>
-            <h1 style={{ textAlign: 'center' }}>
-              <span style={fontStyle('Times New Roman', '6', '#800080')}>
-                Welcome to My Web 1.0 Homepage!
-              </span>
+            <h1 style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: '32px', color: '#800080' }}>
+              Welcome to My Web 1.0 Homepage!
             </h1>
             <hr style={{ height: '2px', width: '80%', backgroundColor: '#0000FF', border: 'none' }} />
-            <p>
-              <span style={fontStyle('Times New Roman', '3')}>
-                Hello and welcome to my little corner of the World Wide Web! This page was created to demonstrate what websites looked like in the early days of the internet (approximately 1994-2000). Back then, websites were mostly static, with minimal styling and interactivity.
-              </span>
+            <p style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+              Hello and welcome to my little corner of the World Wide Web! This page was created to demonstrate what websites looked like in the early days of the internet (approximately 1994-2000). Back then, websites were mostly static, with minimal styling and interactivity.
             </p>
-            <p>
-              <span style={fontStyle('Times New Roman', '3')}>
-                <b>Key features of Web 1.0 design:</b>
-              </span>
+            <p style={{ fontFamily: 'Times New Roman', fontSize: '16px', fontWeight: 'bold' }}>
+              Key features of Web 1.0 design:
             </p>
             <ul>
-              <li>
-                <span style={fontStyle('Times New Roman', '3')}>Table-based layouts (like this page!)</span>
+              <li style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+                Table-based layouts (like this page!)
               </li>
-              <li>
-                <span style={fontStyle('Times New Roman', '3')}>Bright background colors or repeating patterns</span>
+              <li style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+                Bright background colors or repeating patterns
               </li>
-              <li>
-                <span style={fontStyle('Times New Roman', '3')}>Animated GIFs and small images</span>
+              <li style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+                Animated GIFs and small images
               </li>
-              <li>
-                <span style={fontStyle('Times New Roman', '3')}>Basic navigation with simple hyperlinks</span>
+              <li style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+                Basic navigation with simple hyperlinks
               </li>
-              <li>
-                <span style={fontStyle('Times New Roman', '3')}>Hit counters and "Under Construction" signs</span>
+              <li style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+                Hit counters and "Under Construction" signs
               </li>
-              <li>
-                <span style={fontStyle('Times New Roman', '3')}>Browser compatibility badges</span>
+              <li style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+                Browser compatibility badges
               </li>
-              <li>
-                <span style={fontStyle('Times New Roman', '3')}>Guestbooks for visitors to sign</span>
+              <li style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+                Guestbooks for visitors to sign
               </li>
             </ul>
-            <p>
-              <span style={fontStyle('Times New Roman', '3')}>
-                Web 1.0 was characterized by its static nature. Users could only read content, not interact with it. This era is often called the "Read-Only Web." Websites were simple HTML pages with minimal CSS styling.
-              </span>
+            <p style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
+              Web 1.0 was characterized by its static nature. Users could only read content, not interact with it. This era is often called the "Read-Only Web." Websites were simple HTML pages with minimal CSS styling.
             </p>
             <p style={{ textAlign: 'center' }}>
-              <span style={fontStyle('Times New Roman', '3')}>
-                <div className="marquee-container" style={{ width: '400px', margin: '0 auto', overflow: 'hidden' }}>
-                  <div className="marquee-content" style={{ animation: 'marquee 10s linear infinite' }}>
-                    <b>Thank you for visiting my Web 1.0 experience!</b>
-                  </div>
+              <div className="marquee-container" style={{ width: '400px', margin: '0 auto', overflow: 'hidden' }}>
+                <div className="marquee-content" style={{ animation: 'marquee 10s linear infinite', fontFamily: 'Times New Roman', fontSize: '16px', fontWeight: 'bold' }}>
+                  Thank you for visiting my Web 1.0 experience!
                 </div>
-                <style jsx>{`
+              </div>
+              <style>
+                {`
                   @keyframes marquee {
                     0% { transform: translateX(100%); }
                     100% { transform: translateX(-100%); }
                   }
-                `}</style>
-              </span>
+                `}
+              </style>
             </p>
             <p style={{ textAlign: 'center' }}>
-              <button className="web1-button" onClick={() => window.alert('This button doesn\'t do much in Web 1.0!')}>
+              <button 
+                className="web1-button" 
+                onClick={() => window.alert("This button doesn't do much in Web 1.0!")}
+                style={{ cursor: 'pointer' }}
+              >
                 Click Me!
               </button>
             </p>
-            <p style={{ textAlign: 'right' }}>
-              <span style={fontStyle('Times New Roman', '2')}>
-                <i>Last updated: October 12, 1999</i>
-              </span>
+            <p style={{ textAlign: 'right', fontFamily: 'Times New Roman', fontSize: '13px', fontStyle: 'italic' }}>
+              Last updated: October 12, 1999
             </p>
           </td>
         </tr>

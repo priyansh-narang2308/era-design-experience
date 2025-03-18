@@ -10,52 +10,52 @@ const About = () => {
   
   const renderWeb1About = () => {
     return (
-      <table width="100%" cellPadding="0" cellSpacing="0" border="0">
+      <table width="100%" cellPadding="0" cellSpacing="0" style={{ border: 0 }}>
         <tbody>
           <tr>
-            <td align="center" bgcolor="#C0C0C0" className="p-4">
-              <font size="6" face="Times New Roman">
-                <b>About This Project</b>
-              </font>
+            <td align="center" style={{ backgroundColor: '#C0C0C0', padding: '1rem' }} className="p-4">
+              <div style={{ fontFamily: 'Times New Roman', fontSize: '32px', fontWeight: 'bold' }}>
+                About This Project
+              </div>
             </td>
           </tr>
           <tr>
-            <td bgcolor="#FFFFFF" className="p-4">
+            <td style={{ backgroundColor: '#FFFFFF', padding: '1rem' }} className="p-4">
               <p>
-                <font face="Times New Roman" size="3">
+                <span style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
                   This website demonstrates the evolution of web design across different eras. It was created for a UI design hackathon to showcase how web interfaces have changed over time.
-                </font>
+                </span>
               </p>
-              <hr size="1" noshade="noshade" />
+              <hr style={{ height: '1px', border: 'none', backgroundColor: 'black' }} />
               <h2>
-                <font face="Times New Roman" size="4" color="#800080">
-                  <b>Project Goals</b>
-                </font>
+                <span style={{ fontFamily: 'Times New Roman', fontSize: '18px', color: '#800080', fontWeight: 'bold' }}>
+                  Project Goals
+                </span>
               </h2>
               <ul>
                 <li>
-                  <font face="Times New Roman" size="3">
+                  <span style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
                     Recreate authentic UI experiences from Web 1.0, 2.0, and 3.0
-                  </font>
+                  </span>
                 </li>
                 <li>
-                  <font face="Times New Roman" size="3">
+                  <span style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
                     Demonstrate the evolution of user interactions
-                  </font>
+                  </span>
                 </li>
                 <li>
-                  <font face="Times New Roman" size="3">
+                  <span style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
                     Show how design patterns have changed over time
-                  </font>
+                  </span>
                 </li>
                 <li>
-                  <font face="Times New Roman" size="3">
+                  <span style={{ fontFamily: 'Times New Roman', fontSize: '16px' }}>
                     Create an educational resource for web design history
-                  </font>
+                  </span>
                 </li>
               </ul>
-              <hr size="1" noshade="noshade" />
-              <p align="center">
+              <hr style={{ height: '1px', border: 'none', backgroundColor: 'black' }} />
+              <p style={{ textAlign: 'center' }}>
                 <button className="web1-button" onClick={() => navigate('/')}>
                   Return to Homepage
                 </button>

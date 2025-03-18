@@ -10,13 +10,13 @@ const MainLayout = () => {
   const getLayoutClass = () => {
     switch (currentEra) {
       case 'web1':
-        return 'web1-bg font-web1';
+        return 'web1-bg';
       case 'web2':
-        return 'bg-web2-gray font-web2';
+        return 'bg-gray-100';
       case 'web3':
-        return 'bg-web3-dark font-web3';
+        return 'bg-gray-900 text-white';
       default:
-        return 'bg-gradient-to-br from-purple-900 to-blue-900 font-web3';
+        return 'bg-gradient-to-br from-purple-900 to-blue-900 text-white';
     }
   };
 
