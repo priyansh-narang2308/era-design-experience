@@ -4,7 +4,11 @@ import { ThumbsUp, MessageCircle, Share2, Bookmark, Heart } from 'lucide-react';
 
 const Web2Content = () => {
   const [likes, setLikes] = useState({ post1: 157, post2: 89, post3: 243 });
-  const [comments, setComments] = useState({ post1: [], post2: [], post3: [] });
+  const [comments, setComments] = useState({ 
+    post1: [], 
+    post2: [], 
+    post3: [] 
+  });
   const [commentText, setCommentText] = useState('');
   const [bookmarked, setBookmarked] = useState({ post1: false, post2: false, post3: false });
   const [liked, setLiked] = useState({ post1: false, post2: false, post3: false });

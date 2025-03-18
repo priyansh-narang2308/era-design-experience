@@ -153,3 +153,82 @@
     @apply bg-black/10 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400;
   }
 }
+
+/* Web 2.0 colors */
+@layer utilities {
+  .bg-web2-blue {
+    @apply bg-blue-500;
+  }
+  
+  .bg-web2-green {
+    @apply bg-green-500;
+  }
+  
+  .bg-web2-red {
+    @apply bg-red-500;
+  }
+  
+  .bg-web2-yellow {
+    @apply bg-yellow-500;
+  }
+  
+  .bg-web2-dark {
+    @apply bg-gray-800;
+  }
+  
+  .bg-web2-gray {
+    @apply bg-gray-100;
+  }
+  
+  .text-web2-blue {
+    @apply text-blue-500;
+  }
+  
+  .text-web2-dark {
+    @apply text-gray-800;
+  }
+  
+  .bg-gradient-web2 {
+    @apply bg-gradient-to-r from-blue-500 to-purple-500;
+  }
+}
+
+/* Web 3.0 colors */
+@layer utilities {
+  .bg-web3-dark {
+    @apply bg-gray-900;
+  }
+  
+  .bg-web3-primary {
+    @apply bg-purple-500;
+  }
+  
+  .bg-web3-accent {
+    @apply bg-cyan-400;
+  }
+  
+  .bg-web3-success {
+    @apply bg-green-400;
+  }
+  
+  .text-web3-primary {
+    @apply text-purple-500;
+  }
+  
+  .text-web3-accent {
+    @apply text-cyan-400;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+}
