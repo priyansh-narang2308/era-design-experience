@@ -1,69 +1,42 @@
-# Welcome to your Lovable project
+# Web UI Evolution
 
-## Project info
+## 📋 Overview
 
-**URL**: https://lovable.dev/projects/c90aa8be-91c9-45fc-a912-7bc3605c9579
+This project is an interactive showcase demonstrating the evolution of web design and user interfaces across three distinct eras: Web 1.0, Web 2.0, and Web 3.0. It allows users to explore and experience the visual, functional, and philosophical differences between these web generations.
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+### 🕰️ Historical Timeline Experience
+- **Web 1.0 (1990s - Early 2000s)**: Experience the nostalgic era of static pages, basic HTML layouts, and rudimentary design principles.
+- **Web 2.0 (Mid 2000s - Present)**: Explore the social web with dynamic content, enhanced user interactions, and responsive designs.
+- **Web 3.0 (Emerging)**: Witness the future with decentralized applications, AI-powered interfaces, and immersive digital experiences.
 
-**Use Lovable**
+### 🎛️ Interactive Elements
+- Era toggle to switch between different web generations
+- Authentic recreations of era-specific UI elements and interactions
+- Side-by-side comparison view to contrast the different approaches
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c90aa8be-91c9-45fc-a912-7bc3605c9579) and start prompting.
+### 🧩 Technical Highlights
+- Built with React and TypeScript for robust frontend architecture
+- Tailwind CSS for responsive and customizable styling
+- Context API for global state management
+- Clean component structure following modern best practices
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+## 🛠️ Technologies Used
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend Framework**: React
+- **Routing**: React Router
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn UI
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Language**: TypeScript
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+## 👨‍💻 Team Members
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Priyansh Narang
+Kaushal loya
+Paarthu reddy
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c90aa8be-91c9-45fc-a912-7bc3605c9579) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
