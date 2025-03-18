@@ -12,9 +12,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 to-blue-900 text-white">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-neutral-950 to-white text-white">
       <div className="text-center max-w-4xl px-4">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text  text-black">
           Web UI Evolution
         </h1>
         <p className="text-xl text-blue-100 mb-10">
@@ -80,13 +80,13 @@ const Index = () => {
         <div className="mt-8 flex justify-center space-x-6">
           <button 
             onClick={() => navigate('/about')} 
-            className="text-blue-300 hover:text-white transition-colors"
+            className="text-black hover:text-white transition-colors"
           >
             About This Project
           </button>
           <button 
             onClick={() => navigate('/compare')} 
-            className="text-blue-300 hover:text-white transition-colors"
+            className="text-black hover:text-white transition-colors"
           >
             Compare All Eras
           </button>

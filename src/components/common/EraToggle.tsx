@@ -55,7 +55,7 @@ const EraToggle = () => {
                 key={era.value}
                 onClick={() => setCurrentEra(era.value)}
                 className={`web3-button flex items-center space-x-1 ${
-                  currentEra === era.value ? 'from-purple-500 to-cyan-400' : 'bg-black/30 backdrop-blur-md'
+                  currentEra === era.value ? 'from-purple-900 to-cyan-400' : 'bg-black/30 backdrop-blur-md'
                 }`}
               >
                 {era.icon}

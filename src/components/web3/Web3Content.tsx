@@ -54,10 +54,7 @@ const Web3Content = () => {
                 <span>Explore the Metaverse</span>
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
-              <button className="bg-black/30 backdrop-blur-md text-white py-2 px-6 rounded-xl border border-white/10 font-web3 font-medium transition-all hover:bg-black/40 flex items-center justify-center">
-                <Wallet className="mr-2 h-5 w-5" />
-                <span>Connect Wallet</span>
-              </button>
+          
             </div>
           </div>
         </div>

@@ -30,12 +30,7 @@ const Web3Header = () => {
             <button className="text-white/80 hover:text-white transition-colors">
               <Moon className="h-5 w-5" />
             </button>
-            <button 
-              className="flex items-center space-x-2 px-4 py-1.5 rounded-full bg-purple-500/20 text-purple-400 hover:bg-purple-500/30 transition-colors"
-            >
-              <Wallet className="w-4 h-4" />
-              <span className="text-sm font-medium">Connect Wallet</span>
-            </button>
+            
           </div>
         </div>
       </div>
