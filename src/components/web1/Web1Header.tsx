@@ -27,7 +27,7 @@ const Web1Header = () => {
                       <Link to="/explore" className="web1-link">HOME</Link> |{" "}
                       <Link to="/about" className="web1-link">ABOUT</Link> |{" "}
                       <Link to="/compare" className="web1-link">COMPARE</Link> |{" "}
-                      <Link to="/contact" className="web1-link">CONTACT</Link>
+                      <Link to="/" className="web1-link">EXIT</Link>
                     </div>
                   </td>
                 </tr>
