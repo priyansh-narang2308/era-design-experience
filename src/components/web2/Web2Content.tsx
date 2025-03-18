@@ -124,7 +124,7 @@ const Web2Content = () => {
                   JS
                 </div>
                 <div className="ml-3">
-                  <p className="font-semibold">Jane Smith</p>
+                  <p className="font-semibold">Priyansh Narang</p>
                   <p className="text-sm text-gray-500">Posted 2 hours ago</p>
                 </div>
               </div>
@@ -165,7 +165,7 @@ const Web2Content = () => {
                   MT
                 </div>
                 <div className="ml-3">
-                  <p className="font-semibold">Mark Thompson</p>
+                  <p className="font-semibold">Ram pal</p>
                   <p className="text-sm text-gray-500">Posted yesterday</p>
                 </div>
               </div>
@@ -250,7 +250,7 @@ const Web2Content = () => {
                     JD
                   </div>
                   <div className="ml-2">
-                    <p className="text-sm font-semibold">John Doe</p>
+                    <p className="text-sm font-semibold">Paarthu Reddy</p>
                     <div className="flex items-center">
                       <div className="w-2 h-2 rounded-full bg-green-500 mr-1"></div>
                       <p className="text-xs text-gray-500">Online</p>
@@ -262,7 +262,7 @@ const Web2Content = () => {
                     AS
                   </div>
                   <div className="ml-2">
-                    <p className="text-sm font-semibold">Alice Smith</p>
+                    <p className="text-sm font-semibold">Kaushal Loya</p>
                     <div className="flex items-center">
                       <div className="w-2 h-2 rounded-full bg-green-500 mr-1"></div>
                       <p className="text-xs text-gray-500">Online</p>
@@ -274,7 +274,7 @@ const Web2Content = () => {
                     RJ
                   </div>
                   <div className="ml-2">
-                    <p className="text-sm font-semibold">Robert Johnson</p>
+                    <p className="text-sm font-semibold">Paarthu Reddy</p>
                     <div className="flex items-center">
                       <div className="w-2 h-2 rounded-full bg-gray-400 mr-1"></div>
                       <p className="text-xs text-gray-500">Offline</p>
