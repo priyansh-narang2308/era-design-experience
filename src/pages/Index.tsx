@@ -14,7 +14,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-neutral-950 to-white text-white">
       <div className="text-center max-w-4xl px-4">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text  text-black">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-black bg-clip-text ">
           Web UI Evolution
         </h1>
         <p className="text-xl text-blue-100 mb-10">
