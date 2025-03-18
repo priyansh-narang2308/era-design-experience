@@ -121,7 +121,7 @@ const Web2Content = () => {
             <div className="web2-card">
               <div className="flex items-center mb-3">
                 <div className="w-10 h-10 rounded-full bg-web2-blue flex items-center justify-center text-white font-bold">
-                  JS
+                  PN
                 </div>
                 <div className="ml-3">
                   <p className="font-semibold">Priyansh Narang</p>
@@ -162,7 +162,7 @@ const Web2Content = () => {
             <div className="web2-card">
               <div className="flex items-center mb-3">
                 <div className="w-10 h-10 rounded-full bg-web2-green flex items-center justify-center text-white font-bold">
-                  MT
+                  RP
                 </div>
                 <div className="ml-3">
                   <p className="font-semibold">Ram pal</p>
@@ -247,7 +247,7 @@ const Web2Content = () => {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-web2-blue flex items-center justify-center text-white text-sm font-bold">
-                    JD
+                    PR
                   </div>
                   <div className="ml-2">
                     <p className="text-sm font-semibold">Paarthu Reddy</p>
@@ -259,7 +259,7 @@ const Web2Content = () => {
                 </div>
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-web2-green flex items-center justify-center text-white text-sm font-bold">
-                    AS
+                    KL
                   </div>
                   <div className="ml-2">
                     <p className="text-sm font-semibold">Kaushal Loya</p>
@@ -271,7 +271,7 @@ const Web2Content = () => {
                 </div>
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-web2-red flex items-center justify-center text-white text-sm font-bold">
-                    RJ
+                    PR
                   </div>
                   <div className="ml-2">
                     <p className="text-sm font-semibold">Paarthu Reddy</p>
