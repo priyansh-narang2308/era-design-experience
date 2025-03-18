@@ -2,33 +2,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const fontStyle = (face: string, size: string) => ({
+  fontFamily: face,
+  fontSize: size === '1' ? '10px' : 
+            size === '2' ? '13px' : 
+            size === '3' ? '16px' : 
+            size === '4' ? '18px' : 
+            size === '5' ? '24px' : 
+            size === '6' ? '32px' : '16px'
+});
+
 const Web1Header = () => {
   return (
-    <table width="100%" cellPadding="0" cellSpacing="0" border="0" className="web1-table">
+    <table width="100%" cellPadding={0} cellSpacing={0} style={{ border: '0' }} className="web1-table">
       <tbody>
         <tr>
-          <td align="center" bgcolor="#C0C0C0">
-            <font size="6" face="Times New Roman">
+          <td style={{ textAlign: 'center', backgroundColor: '#C0C0C0' }}>
+            <div style={fontStyle('Times New Roman', '6')}>
               <b>Welcome to the Web 1.0 Experience</b>
-            </font>
+            </div>
             <br />
-            <font size="2" face="Times New Roman">
+            <div style={fontStyle('Times New Roman', '2')}>
               <i>Best viewed with Netscape Navigator 4.0 or Internet Explorer 5.0</i>
-            </font>
+            </div>
           </td>
         </tr>
         <tr>
-          <td bgcolor="#FFFFFF">
-            <table width="100%" cellPadding="2" cellSpacing="0" border="0">
+          <td style={{ backgroundColor: '#FFFFFF' }}>
+            <table width="100%" cellPadding={2} cellSpacing={0} style={{ border: '0' }}>
               <tbody>
                 <tr>
-                  <td align="center">
-                    <font face="Times New Roman" size="3">
+                  <td style={{ textAlign: 'center' }}>
+                    <div style={fontStyle('Times New Roman', '3')}>
                       <Link to="/explore" className="web1-link">HOME</Link> |{" "}
                       <Link to="/about" className="web1-link">ABOUT</Link> |{" "}
                       <Link to="/compare" className="web1-link">COMPARE</Link> |{" "}
                       <Link to="/contact" className="web1-link">CONTACT</Link>
-                    </font>
+                    </div>
                   </td>
                 </tr>
               </tbody>
